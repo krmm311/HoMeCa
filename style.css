@@ -89,6 +89,14 @@ a:hover {
   animation: opacity 1s ease-in-out infinite;
   opacity: 1;
 }
+input {
+			background: none;
+			color: #434C5E;
+			width: 6px;
+      outline: 0;
+			border: 0;
+			border-radius: 0;
+}
 
 @keyframes opacity {
   0% {
