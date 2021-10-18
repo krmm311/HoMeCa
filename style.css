@@ -89,25 +89,25 @@ a:hover {
   animation: opacity 1s ease-in-out infinite;
   opacity: 1;
 }
-  input,
-	textarea,
-		input {
-			background: none;
-			color: #434C5E;
-			width: 6px;
-			font: 16px/1 'Fira Code', monospace;
-			outline: 0;
-			border: 0;
-			border-radius: 0;
-			border-bottom: 1px solid #81A1C1;
-		}
-		textarea:focus,
-		input:focus {
-			color: #D8DEE9;
-			outline: 0;
-			border: 0;
-			width: 50%;
-		}
+input,
+textarea,
+input {
+  background: none;
+  color: #434C5E;
+  width: 6px;
+  font: 16px/1 'Fira Code', monospace;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid #81A1C1;
+}
+textarea:focus,
+input:focus {
+  color: #D8DEE9;
+  outline: 0;
+  border: 0;
+  width: 50%;
+  }
 }
 
 @keyframes opacity {
