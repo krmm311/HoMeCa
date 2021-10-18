@@ -91,12 +91,13 @@ a:hover {
 }
 input {
   background: none;
-  color: #434C5E;
-  width: 40px;
-  font-size: 40px;
-  outline: 0;
-  border: 0;
-  border-radius: 0;
+	color: #434C5E;
+	width: 6px;
+	font: 16px/1 'Fira Code', monospace;
+	outline: 0;
+	border: 0;
+	border-radius: 0;
+	border-bottom: 1px solid #81A1C1;
 }
 
 @keyframes opacity {
