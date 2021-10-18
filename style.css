@@ -90,9 +90,10 @@ a:hover {
   opacity: 1;
 }
 input {
+  font-size: 40px;
   background: none;
   color: #434C5E;
-  width: 40px;
+  width: 16px;
   outline: 0;
   border: 0;
   border-radius: 0;
