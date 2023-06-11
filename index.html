@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>kssa</title>
+		<title>~</title>
 		<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="styles/style.css">
 		<script src="scripts/transitions.js"></script>
@@ -18,62 +18,81 @@
 			<div id="content">
 				<h1 class="title">Welcome kssa</h1>
 				<div id="date">
-					<script type="text/javascript"></script>
+					<script type="text/javascript">
+						function doDate() {
+							var str = "";
+							var months = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+							var clock = new Date();
+							var now = new Date();
+
+							str += months[clock.getMonth()] + " " + now.getDate() + ", " + clock.getFullYear() + " | " + ("0" + now.getHours()).slice(-2) +":" + ("0" + now.getMinutes()).slice(-2) + ":" + ("0" + now.getSeconds()).slice(-2);
+							document.getElementById("date").innerHTML = str;
+						}
+						setInterval(doDate, 1000);
+						doDate();
+					</script>
 				</div>
 
+		<!-- Web search -->
+				<div id="web_search">
+					<form action="https://duckduckgo.com/" method="GET" autocomplete="off">
+						<label for="q">></label>
+						<input autofocus
+			        	 		id="q"
+			         			name="q"
+			         			type="search"
+			         			placeholder="search with duckduckgo...">
+					</form>
+				</div>
 
+		<!-- Links -->
+				<nav>
+					<div id=links_container>
+						<ul>
+							<a class="subtitle">Fun</a>
+								<li><a href="https://twitter.com/home">twitter</a></li>
+							        <li><a href="https://www.pinterest.com.mx/">pinterest</a></li>
+							        <li><a href="https://pony.town">PonyTown</a></li>
+							        <li><a href="https://web.whatsapp.com/">Whatsapp</a></li>
+						</ul>
+						<ul>
+							<a class="subtitle">Media</a>
+								<li><a href="https://www.netflix.com/mx/">Netflix</a></li>
+                                                                <li><a href="https://www.paramountplus.com/user-profile/whos-watching">paramount</a></li>
+                                                                <li><a href="https://play.hbomax.com/page/urn:hbo:page:home">HBO</a></li>
+                                                                <li><a href="https://www.disneyplus.com/es-419/select-profile">Disney</a></li>
+                                                                <li><a href="https://www.starplus.com/es-419/home">Star</a></li>
+                                                                <li><a href="https://www.primevideo.com/region/na/storefront?ref_=av_auth_return_redir">Prime</a>
+						</ul>
+						<ul>
+							<a class="subtitle">Importantes</a>
+                                                                 <li><a href="https://outlook.live.com/mail/0/">Outlook</a></li>
+                                                                 <li><a href="https://chat.openai.com/">ChatGPT</a></li>
+                                                                 <li><a href="https://trayectoriaeducativa.seg.guanajuato.gob.mx/index.aspx">SEG</a></li>
+                                                                 <li><a href="https://mail.google.com/mail/u/0/">Gmail</a></li>
+                                                                 <li><a href="https://www.office.com/?auth=1">Office</a></li>
+						</ul>
+						<ul>
+							<a class="subtitle">Links</a>
+								<li><a href="https://www3.animeflv.net/">animeflv</a></li>
+                                                                <li><a href="https://youtube.com/">youtube</a></li>
+                                                                <li><a href="https://twitch.tv/">twitch</a></li>
+                                                                <li><a href="https://lectortmo.com/">TMO</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
 
-            <div class="bookmarks">
-                <div class="category">
-                    <div class="links">
-                        <li class="title">fun</li>
-                        <li><a href="https://twitter.com/home">twitter</a></li>
-                        <li><a href="https://www.pinterest.com.mx/">pinterest</a></li>
-                        <li><a href="https://pony.town">PonyTown</a></li>
-                        <li><a href="https://web.whatsapp.com/">Whatsapp</a></li>
-                    </div>
-                </div>
+		<!-- Footer -->
+		<div class="bottom">
+			<p class="credits">
+				<a href="https://youtu.be/bcCBHbrnFas">xdd</a>
+			</p>
 
-                <div class="category">
-                    <div class="links">
-                        <li class="title">importantes</li>
-                        <li><a href="https://outlook.live.com/mail/0/">Outlook</a></li>
-                        <li><a href="https://chat.openai.com/">ChatGPT</a></li>
-                        <li><a href="https://trayectoriaeducativa.seg.guanajuato.gob.mx/index.aspx">SEG</a></li>
-                        <li><a href="https://mail.google.com/mail/u/0/">Gmail</a></li>
-                        <li><a href="https://www.office.com/?auth=1">Office</a></li>
-                    </div>
-                </div>
-
-                <div class="category">
-                    <div class="links">
-                        <li class="title">Video</li>
-                        <li><a href="https://www.netflix.com/mx/">Netflix</a></li>
-                        <li><a href="https://www.paramountplus.com/user-profile/whos-watching">paramount</a></li>
-                        <li><a href="https://play.hbomax.com/page/urn:hbo:page:home">HBO</a></li>
-                        <li><a href="https://www.disneyplus.com/es-419/select-profile">Disney</a></li>
-                        <li><a href="https://www.starplus.com/es-419/home">Star</a></li>
-                        <li><a href="https://www.primevideo.com/region/na/storefront?ref_=av_auth_return_redir">Prime</a></li>
-                    </div>
-                </div>
-
-                <div class="category">
-                    <div class="links">
-                        <li class="title">interes</li>
-                        <li><a href="https://www3.animeflv.net/">animeflv</a></li>
-                        <li><a href="https://youtube.com/">youtube</a></li>
-                        <li><a href="https://twitch.tv/">twitch</a></li>
-                        <li><a href="https://lectortmo.com/">TMO</a></li>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="bottom">
-			
 			<div class="contacts">
 				<p>
-					<a href="https://github.com/krmm311/HoMeCa">Github</a> | 
+					<a href="https://github.com/krmm311/">MyGithub</a> | 
 					<span id="light-mode-toggle" class="light-mode-toggle">Switch themes</span>
 				</p>
 			</div>
@@ -81,8 +100,4 @@
 
 		<script src="scripts/darkmode.js"></script>
 	</body>
-</html>
-
-</body>
-
 </html>
