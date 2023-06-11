@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>kssa</title>
+		<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+		<script src="scripts/transitions.js"></script>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <title>Welcome kssa</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
+	<body>
+		<svg id="fader"></svg>
+        <script></script>
 
-<body>
-    <div class="container">
-        <div class="left-container">
-            <div class="gif">
-                <img src="chill.gif" />
-            </div>
-        </div>
+		<!-- Welcome screen -->
+		<div id="main_window">
+			<img id=leftImg src="chill.gif" class="gif">
+			<div id="content">
+				<h1 class="title">Welcome kssa</h1>
+				<div id="date">
+					<script type="text/javascript"></script>
+				</div>
 
-        <div class="right-container">
-            <div class="head">
-                <form method="get" action="https://www.google.com/search?q=">
-                <p>> kssa ~/<span class="blinking">_</span><input type="text" name="q" spellcheck="false" placeholder=" " autofocus></p>
-               </form>
-            </div>
+
 
             <div class="bookmarks">
                 <div class="category">
@@ -68,6 +69,20 @@
             </div>
         </div>
     </div>
+    <div class="bottom">
+			
+			<div class="contacts">
+				<p>
+					<a href="https://gitlab.com/wolfiy/wlfys-minimal-startpage">GitLab Repo</a> | 
+					<span id="light-mode-toggle" class="light-mode-toggle">Switch themes</span>
+				</p>
+			</div>
+		</div>
+
+		<script src="scripts/darkmode.js"></script>
+	</body>
+</html>
+
 </body>
 
 </html>
