@@ -86,12 +86,20 @@ a:hover {
 }
 
 .blinking {
-  animation: opacity 1s ease-in-out infinite;
-  opacity: 1;
+  animation: blink 1s ease-in-out infinite;
 }
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
 input,
-textarea,
-input {
+textarea {
   background: none;
   color: #EADBB2;
   width: 6px;
@@ -100,25 +108,11 @@ input {
   border: 0;
   border-radius: 0;
 }
+
 textarea:focus,
 input:focus {
   color: #D8DEE9;
   outline: 0;
   border: 0;
   width: 50%;
-  }
-}
-
-@keyframes opacity {
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
 }
